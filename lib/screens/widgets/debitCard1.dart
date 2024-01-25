@@ -1,14 +1,16 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 
-class Card1 extends StatelessWidget {
-  const Card1({
+class DebitCard1 extends StatelessWidget {
+  const DebitCard1({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 308,
+      width: 335,
       height: 190,
       clipBehavior: Clip.antiAlias,
       decoration: ShapeDecoration(

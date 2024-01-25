@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:financial_management_ui_app/screens/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -76,15 +77,27 @@ class Onboarding extends StatelessWidget {
                       borderRadius: BorderRadius.circular(38),
                     ),
                   ),
-                  child: Center(
-                    child: Text(
-                      'Get Started',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 18,
-                        fontFamily: 'Product Sans',
-                        fontWeight: FontWeight.w700,
-                        height: 0,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushAndRemoveUntil<dynamic>(
+                        context,
+                        MaterialPageRoute<dynamic>(
+                          builder: (BuildContext context) =>
+                              CustomBottomNavBar(),
+                        ),
+                        (route) => false,
+                      );
+                    },
+                    child: Center(
+                      child: Text(
+                        'Get Started',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontFamily: 'Product Sans',
+                          fontWeight: FontWeight.w700,
+                          height: 0,
+                        ),
                       ),
                     ),
                   ),

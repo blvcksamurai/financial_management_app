@@ -1,5 +1,6 @@
 import 'package:financial_management_ui_app/screens/home_screen.dart';
 import 'package:financial_management_ui_app/screens/onboarding.dart';
+import 'package:financial_management_ui_app/screens/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff0a0a0a)),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const Onboarding(),
     );
   }
 }
